@@ -1,3 +1,6 @@
 export * from './Navbar'
 export * from './NavRed'
 export * from './MenuItem'
+export * from './ListaCompra'
+export * from './Congelador'
+export * from './CardItem'

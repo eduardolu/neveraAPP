@@ -11,20 +11,17 @@ export default function NavRed() {
     return (
         <div className='text-white w-full flex justify-between p-4 items-center bg-black'> 
         {/* quite  fixed */}
-            <div className="text-2xl font-bold text-center uppercase">
-                <h1>Nevera<span className='block text-yellow-400 uppercase text-4xl'>app</span></h1>
-            </div>
-            <div>
-            <img src="../img/logo.png" alt="logo" />
+            <div className="text-xl font-bold text-center uppercase">
+                <h1>Nevera<span className='block text-yellow-400 uppercase text-2xl'>app</span></h1>
             </div>
             <nav>
                 <div className='absolute right-6 md:hidden top-4 scale-150'>
                     <MenuOutlined onClick={showMenu} />
                 </div>
-                <ul className='hidden md:flex gap-8 p-6 bg-white/10'>
+                <ul className='hidden md:flex gap-8 p-4 bg-white/10 text-xl'>
                     <li><Link to='/'>Inicio</Link></li>
-                    <li><Link to='/'>Compra</Link></li>
-                    <li><Link to='/'>Congerador</Link></li>
+                    <li><a href='#compra'>Compra</a></li>
+                    <li><a href="#congelador">Congelador</a></li>
                     <li><Link to='/'>Sobre Mí</Link></li>
                 </ul>
                 <MenuItem showMenu={showMenu} active={active}/>
